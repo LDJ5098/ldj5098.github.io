@@ -127,3 +127,15 @@ function ad_number(){
         parentElement.appendChild(label);
     }
 }
+
+
+// 이벤트 리스너 등록
+window.addEventListener('resize', function() {
+    if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
+        // 가상 키보드가 활성화되었을 때 조치
+        document.getElementById('#bottom_bar').style.display = 'none'; // 예시로 50px 조절
+    } else {
+        // 가상 키보드가 비활성화되었을 때 조치
+        document.getElementById('#bottom_bar').style.bottom = 'flex';
+    }
+});
