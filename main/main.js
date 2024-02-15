@@ -130,12 +130,14 @@ function ad_number(){
 
 
 // 이벤트 리스너 등록
-window.addEventListener('resize', function() {
-    if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') {
-        // 가상 키보드가 활성화되었을 때 조치
-        document.getElementById('#bottom_bar').style.display = 'none'; // 예시로 50px 조절
-    } else {
-        // 가상 키보드가 비활성화되었을 때 조치
-        document.getElementById('#bottom_bar').style.bottom = 'flex';
-    }
+var inputElement = document.querySelector('#search_menu > input');
+var bottombar = document.getElementById('bottom_bar');
+inputElement.addEventListener('focus', function() {
+    console.log('Input에 포커스가 되었습니다.');
+    bottombar.style.position = 'absolute';
+});
+
+inputElement.addEventListener('blur', function() {
+    console.log('Input에서 포커스가 해제되었습니다.');
+    bottombar.style.position = 'fixed';
 });
