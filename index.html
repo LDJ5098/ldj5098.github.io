@@ -1,41 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>로컬 스토리지 예제</title>
-<script>
-    // 페이지가 로드될 때 실행되는 함수
-    window.onload = function() {
-        // 로컬 스토리지에서 데이터 가져오기
-        var recentSentence = localStorage.getItem("recentSentence");
-
-        // 가져온 데이터가 있다면 출력
-        if (recentSentence) {
-            document.getElementById("recentSentence").innerText = recentSentence;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        window.onload = function() {
+            window.location.href = 'main/main.html';
         }
-    };
-
-    // 입력받은 문장을 로컬 스토리지에 저장하는 함수
-    function saveSentence() {
-        var inputSentence = document.getElementById("inputSentence").value;
-
-        // 입력된 문장이 비어있지 않은 경우에만 저장
-        if (inputSentence.trim() !== "") {
-            // 로컬 스토리지에 저장
-            localStorage.setItem("recentSentence", inputSentence);
-
-            // 최근 문장을 화면에 표시
-            document.getElementById("recentSentence").innerText = inputSentence;
-        }
-    }
-</script>
+    </script>
 </head>
 <body>
-    <h1>로컬 스토리지 예제</h1>
-    <label for="inputSentence">문장을 입력하세요:</label><br>
-    <input type="text" id="inputSentence"><br>
-    <button onclick="saveSentence()">저장</button><br><br>
-    <div>가장 최근에 입력한 문장: <span id="recentSentence"></span></div>
+    <!-- 페이지가 로드되면 JavaScript가 실행되어 자동으로 main/main.html로 이동됩니다. -->
 </body>
 </html>
