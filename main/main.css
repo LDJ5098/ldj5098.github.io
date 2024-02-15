@@ -162,6 +162,7 @@ body {
     display: flex;
     background-color: white;
     margin-top : 5%;
+    margin-bottom: 5%;
     width: 83%;
     height: 60vw;
     justify-content: center;
