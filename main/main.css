@@ -112,14 +112,14 @@ body {
 
 #search_menu > input::placeholder{
     font-family: 'GangwonEduSaeeum_OTFMediumA';
+    color: #d1d1d1;
 }
 
 #search_menu > input {
     width: 100%;
     margin-right: 2.5%;
-    margin-top:2%;
 
-    font-size:7vw;
+    font-size:9vw;
     font-family: 'GangwonEduSaeeum_OTFMediumA';
     border : none;
 }
