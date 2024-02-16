@@ -60,7 +60,6 @@ advertisement.addEventListener('mouseup', handleEnd); // 수정된 부분: mouse
 function handleStart(e) {
     clearInterval(interval_id);
     //console.log('자동넘기기 비활성화');
-    e.preventDefault();
     if (e.type === 'touchstart') {
         var touch = e.touches[0];
         startX = touch.clientX;
@@ -80,7 +79,6 @@ advertisement.addEventListener('mousemove', handleMove);
 function handleMove(e) {
     clearInterval(interval_id);
     //console.log('자동넘기기 비활성화');
-    e.preventDefault();
     if (!startX) {
         return;
     }
