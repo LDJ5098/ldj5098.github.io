@@ -66,9 +66,27 @@ category_result_scroll.addEventListener('scroll', function() {
 });
 
 var category_check_scroll_number_1 = 'up';
-var category_check_scroll = document.getElementById('category_check_list_1');
-category_check_scroll.addEventListener('scroll', function() {
-    category_check_scroll_number_1 = checkScroll(category_check_scroll, category_check_scroll_number_1);
+var category_check_scroll1 = document.getElementById('category_check_list_1');
+category_check_scroll1.addEventListener('scroll', function() {
+    category_check_scroll_number_1 = checkScroll(category_check_scroll1, category_check_scroll_number_1);
+});
+
+var category_check_scroll_number_2 = 'up';
+var category_check_scroll2 = document.getElementById('category_check_list_2');
+category_check_scroll2.addEventListener('scroll', function() {
+    category_check_scroll_number_2 = checkScroll(category_check_scroll2, category_check_scroll_number_2);
+});
+
+var category_check_scroll_number_3 = 'up';
+var category_check_scroll3 = document.getElementById('category_check_list_3');
+category_check_scroll3.addEventListener('scroll', function() {
+    category_check_scroll_number_3 = checkScroll(category_check_scroll3, category_check_scroll_number_3);
+});
+
+var category_check_scroll_number_4 = 'up';
+var category_check_scroll4 = document.getElementById('category_check_list_4');
+category_check_scroll4.addEventListener('scroll', function() {
+    category_check_scroll_number_4 = checkScroll(category_check_scroll4, category_check_scroll_number_4);
 });
 
 ///////////////////카테고리 찾기 각 버튼별 함수//////////////////////////////////
