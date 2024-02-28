@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'GangwonEduAll';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.ttf') format("truetype");
+    font-display: swap;
+} 
+
+@font-face {
+    font-family: 'KoPubWorldDotum';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.ttf') format("truetype");
+    font-display: swap;
+}
+
+
+body {
+    position: relative;
+    display: flex;
+    background-color:#ffcf4f;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    justify-content: center;
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}::-webkit-scrollbar {
+    display: none;
+}
+
+#mainstage {
+    display: flex;
+    flex-direction: column; /* 요소들을 세로로 정렬합니다. */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom:20vw;
+}
+
+#bottom_bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    width: 90%;
+    background-color: white;
+    height: 20vw;
+
+    bottom : 0%;
+    box-shadow: 0px 3px 10px black;
+    z-index: 10;
+}
+
+#bottom_bar > button {
+    width:18%;
+    height: auto;
+    border: none;
+    background-color: white;
+    background-size :contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#category {
+    background-image: url('../bottom_bar/category.png');
+}
+#home {
+    background-image: url('../bottom_bar/home.png');
+}
+#my {
+    background-image: url('../bottom_bar/my.png');
+}
+#alarm {
+    background-image: url('../bottom_bar/alarm.png');
+}
+#search {
+    background-image: url('../bottom_bar/search.png');
+}
+
+#title_logo {
+    display: flex;
+    width: 90%;
+    margin-top:5%;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+#title {
+    width:100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#main_menu {
+    width: 90%;
+    height: auto;
+    margin-top:0%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list_menu {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom:3%;
+}
+
+.list_menu > img:first-child {
+    width: 100%;
+    object-fit: contain;
+}
+
+#event_list {
+    width: 78%;
+    height: 78%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 17%;
+
+    overflow : auto;
+}::-webkit-scrollbar {
+    display: none;
+}
+
+#event_list > img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom:3%;
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+#options {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+#options > button {
+    width: 31%;
+    height: 10vw;
+    background-color: white;
+    color : black;
+    font-size: 6vw;
+    font-family: 'GangwonEduAll';
+    border-radius: 2.5vw;
+}
+
+
+#bulletin_board {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left:2.5%;
+    padding-right:2.5%;
+    width:90%;
+    height: 50vw;
+    opacity: 0.97;
+
+
+    background-color: white;
+    border-radius: 8px;
+
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.575);
+}
+#bulletin_board > label {
+    font-weight: bold;
+    font-size: 5vw;
+    margin-top:2%;
+}

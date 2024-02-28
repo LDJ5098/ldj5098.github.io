@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="community.css?after">
+    <script src="community.js" defer></script>
+    <script src="../bottom_bar/bottom_button.js" defer></script>
+</head>
+<body>
+    <div id="bottom_bar">
+        <button id="category"></button>
+        <button id="home"></button>
+        <button id="my"></button>
+        <button id="alarm"></button>
+        <button id="search"></button>
+    </div>
+
+    <div id="mainstage">   
+        <div id="title_logo">
+            <img src="title.png" alt="배경" id="title">
+        </div>
+
+        <div id="main_menu">
+                <div class="list_menu">
+                    <img src="my_community.png" alt="나의 커뮤니티">
+
+                    <div id="community_list_background">
+                        <div id="community_list">
+                            <div class="community_list_link">
+                                <label>동작구 악주 모임</label>
+                                <img src="link.png" alt="링크">
+                            </div>
+
+                            <div class="community_list_link">
+                                <label>광주 신상 막걸리 모임</label>
+                                <img src="link.png" alt="링크">
+                            </div>
+
+                            <div class="community_list_link">
+                                <label>편의점 신상술 먹기 모임</label>
+                                <img src="link.png" alt="링크">
+                            </div>
+
+                            <div class="community_list_link">
+                                <label>술잔 모험가들</label>
+                                <img src="link.png" alt="링크">
+                            </div>
+
+                            <div class="community_list_link">
+                                <label>맛있는 술모임</label>
+                                <img src="link.png" alt="링크">
+                            </div>
+
+                            <div class="community_list_link">
+                                <label>술취한 대화방</label>
+                                <img src="link.png" alt="링크">
+                            </div>
+
+                            <div class="community_list_link">
+                                <label>톡톡 터지는 주류파티</label>
+                                <img src="link.png" alt="링크">
+                            </div>
+
+                            <div class="community_list_link">
+                                <label>술잔 즐기는 사람들</label>
+                                <img src="link.png" alt="링크">
+                            </div>
+
+                            <div class="community_list_link">
+                                <label>맛있는 주류 탐험가들</label>
+                                <img src="link.png" alt="링크">
+                            </div>
+
+                            <div class="community_list_link">
+                                <label>술과 대화의 향연</label>
+                                <img src="link.png" alt="링크">
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="edit_button.png" alt="수정하기" id="list_button1">
+                </div>
+
+
+                <div class="list_menu">
+                    <img src="category.png" alt="카테고리 찾기">
+                    <div id="category_searching">
+                        <img src="category/1.png">
+                        <button id="button1" onclick="button1click()"></button>
+                        <button id="button2" onclick="button2click()"></button>
+                        <button id="button3" onclick="button3click()"></button>
+                        <button id="button4" onclick="button4click()"></button>
+
+                        <div class="category_check_list" id="category_check_list_1">
+                            <div class="category_check_name">
+                                <label>경기도</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>강원도</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>충청북도</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>충청남도</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>경상북도</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>경상남도</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>전라북도</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>전라남도</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>제주도</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                        
+                        </div>
+
+                        <div class="category_check_list" id="category_check_list_2">
+                            <div class="category_check_name">
+                                <label>맥주</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>소주</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>와인</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>위스키</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>보드카</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>칵테일</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>럼</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>진</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>브랜디</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>발리</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                        </div>
+
+                        <div class="category_check_list" id="category_check_list_3">
+                            <div class="category_check_name">
+                                <label>달지않은</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>약간 달달한</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>달달한</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>많이 달달한</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>깔끔한</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>텁텁한</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>쌉싸름한</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>발효주</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>증류주</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                        
+                        </div>
+
+                        <div class="category_check_list" id="category_check_list_4">
+                            <div class="category_check_name">
+                                <label>휴가</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>명절</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>파티</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>축제</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>생일</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>모임</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>퇴근 후</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                            <div class="category_check_name">
+                                <label>여행</label>
+                                <img src="n_check.png" alt="체크(X)">
+                            </div>
+                        
+                        </div>
+                    </div>
+
+
+                    <div id="searching_result_div">
+                        <img src="searching_background.png" alt="검색결과 배경">
+                        <div id="searching_result_div_after">
+                            <img src="searching_result.png" alt="검색결과">
+                            <img src="searching_result.png" alt="검색결과">
+                            <img src="searching_result.png" alt="검색결과">
+                            <img src="searching_result.png" alt="검색결과">
+                            <img src="searching_result.png" alt="검색결과">
+                            <img src="searching_result.png" alt="검색결과">
+                            <img src="searching_result.png" alt="검색결과">
+                            <img src="searching_result.png" alt="검색결과">
+                            <img src="searching_result.png" alt="검색결과">
+                            <img src="searching_result.png" alt="검색결과">
+                        </div>
+                    </div>
+
+                    <img src="searching_button.png" alt="검색하기" id="list_button2">
+                </div>
+
+                <div class="n_menu">
+                    
+                    <div id="advertisement">
+                        <img src="ad/1.png" alt="http://광고주소1">
+                        <img src="ad/2.png" alt="http://광고주소2">
+                        <img src="ad/3.png" alt="http://광고주소3">
+                        <img src="ad/4.png" alt="http://광고주소4">
+                        <img src="ad/5.png" alt="http://광고주소5">
+                        <img src="ad/6.png" alt="http://광고주소6">
+
+                        <div id="ad_number">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="list_menu">
+                    <img src="story_board.png" alt="자유로운 이야기(게시판)">
+
+                    <div id="board_list_background">
+                        <div id="board_title">
+                            <label class="board_titles">제목</label>
+                            <div id="subtitle">
+                                <label class="board_titles">댓글</label>
+                                <label class="board_titles">조회수</label>
+                            </div>
+                        </div>
+                        <div id="board_list">
+                            <div class="board_list_content">
+                                <label>연남동에서 여자친구와 갈만한 전통주점 추첨해주세요.</label>
+                                <div class="subtitle_content_div">
+                                    <div class="subtitle_content">
+                                        <label>(13)</label>
+                                    </div>
+                                    <div class="subtitle_content">
+                                        <label>256</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="board_list_content">
+                                <label>안동소주 종류별로 마셔봤어요.</label>
+                                <div class="subtitle_content_div">
+                                    <div class="subtitle_content">
+                                        <label>(9)</label>
+                                    </div>
+                                    <div class="subtitle_content">
+                                        <label>120</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="board_list_content">
+                                <label>대구 경북 막걸리동호회로 초대합니다.</label>
+                                <div class="subtitle_content_div">
+                                    <div class="subtitle_content">
+                                        <label>(7)</label>
+                                    </div>
+                                    <div class="subtitle_content">
+                                        <label>111</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

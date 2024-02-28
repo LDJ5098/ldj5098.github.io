@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'GangwonEduAll';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllBold.ttf') format("truetype");
+    font-display: swap;
+} 
+
+@font-face {
+    font-family: 'KoPubWorldDotum';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/kopus/KoPubWorldDotumLight.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GangwonEduSaeeum_OTFMediumA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    position: relative;
+    display: flex;
+    background-color:#ffcf4f;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    justify-content: center;
+    background-color: #fffcf0;
+}::-webkit-scrollbar {
+    display: none;
+}
+
+#mainstage {
+    display: flex;
+    flex-direction: column; /* 요소들을 세로로 정렬합니다. */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom:28vw;
+}
+
+#bottom_bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    width: 90%;
+    background-color: white;
+    height: 20vw;
+
+    bottom : 0%;
+    box-shadow: 0px 3px 10px black;
+    z-index: 10;
+}
+
+#bottom_bar > button {
+    width:18%;
+    height: auto;
+    border: none;
+    background-color: white;
+    background-size :contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#category {
+    background-image: url('../bottom_bar/category.png');
+}
+#home {
+    background-image: url('../bottom_bar/home.png');
+}
+#my {
+    background-image: url('../bottom_bar/my.png');
+}
+#alarm {
+    background-image: url('../bottom_bar/alarm.png');
+}
+#search {
+    background-image: url('../bottom_bar/search.png');
+}
+
+#main_menu {
+    width: 90%;
+    height: auto;
+    margin-top:10%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main_menu > img {
+    width: 80%;
+    margin-top:5%;
+}
+
+.category_set {
+    width: 95%;
+    margin-bottom: 5%;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3%;
+}
+.title > img {
+    width: 10%;
+}
+.title > label {
+    margin-left:2.5%;
+    font-size: 10vw;
+    font-family:'GangwonEduSaeeum_OTFMediumA';
+}
+
+.text {
+    padding-bottom: 5%;
+    border-bottom: 0.5vw solid rgba(0, 0, 0, 0.3);
+}
+.text > label {
+    margin-right: 5%;
+    font-family:'GangwonEduAll';
+    font-weight: bold;
+    font-size: 5vw;
+    overflow: auto;
+}
+
+#none_line {
+    border: none;
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
