@@ -1,0 +1,96 @@
+body {
+    position: relative;
+    display: flex;
+    background-color:#ffcf4f;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+    justify-content: center;
+    background-image: url(background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#mainstage {
+    display: flex;
+    flex-direction: column; /* 요소들을 세로로 정렬합니다. */
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom:20vw;
+}::-webkit-scrollbar {
+    display: none;
+}
+
+#bottom_bar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    width: 90%;
+    background-color: white;
+    height: 20vw;
+
+    bottom : 0%;
+    box-shadow: 0px 3px 10px black;
+    z-index: 10;
+}
+
+#bottom_bar > button {
+    width:18%;
+    height: auto;
+    border: none;
+    background-color: white;
+    background-size :contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+#category {
+    background-image: url('../bottom_bar/category.png');
+}
+#home {
+    background-image: url('../bottom_bar/home.png');
+}
+#my {
+    background-image: url('../bottom_bar/my.png');
+}
+#alarm {
+    background-image: url('../bottom_bar/alarm.png');
+}
+#search {
+    background-image: url('../bottom_bar/search.png');
+}
+
+#title_logo {
+    display: flex;
+    width: 90%;
+    margin-top:3%;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+#title {
+    width:100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#main_menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-top:12%;
+    align-items: center;
+}
+
+#main_menu > img {
+    width: 90%;
+    margin-bottom: 5%;
+}
