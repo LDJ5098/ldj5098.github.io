@@ -178,3 +178,7 @@ document.getElementById("this_month_sullink").addEventListener("click", function
 document.getElementById("sultwark").addEventListener("click", function() {
     window.location.href = "../sultwark/sultwark.html";
 });
+
+document.getElementById("sul_shop").addEventListener("click", function() {
+    window.location.href = "../sul_shop/sul_shop.html";
+});
