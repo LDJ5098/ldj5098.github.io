@@ -6,3 +6,7 @@ document.getElementById("home").addEventListener("click", function() {
 document.getElementById("my").addEventListener("click", function() {
     window.location.href = "../my_sullink/my_sullink.html";
 });
+
+document.getElementById("category").addEventListener("click", function() {
+    window.location.href = "../category/category.html";
+});
